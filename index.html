@@ -3,7 +3,99 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,500,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href='style.css' />
+    <title>Banking App</title>
   </head>
-  <body></body>
+  <body>
+      <!-- Navigation Bar-->
+      <nav>
+          <p class='welcome'>Log in to proceed</p>
+          <img src="Logo.png" alt="Logo" class="Logo" />
+          <form class="Login">
+              <input type="text" placeholder="user" class='Login-input Login-input-user' />
+              
+            <input type='text' placeholder="PIN" maxlength="4" class="Login-input Login-input-pin" />  
+            <button class="login-btn">&rarr;</button>    
+        </form>
+      </nav>
+      <main class="App">
+          <div class="Balance">
+          <div>
+              <p class="Balance-label">Current Balance</p>
+              <p class="Balance-date">
+                  As of <span class="Date">03/10/2020</span>
+              </p>
+          </div>
+          <p class="Balance-value">0000€</p>
+          </div>
+          
+          <!-- Transactionsssss-->
+          <div class="Transactions">
+              <div class="Transactions-row">
+                <div class="Transactions-type Transactions-type-deposit">2 deposit</div> 
+                <div class="Transactions-date">3 days ago</div>
+                <div class="Transactions-value">4000 €</div>
+              </div>
+              <div class="Transactions-row">
+                <div class="Transactions-type Transactions-type-withdrawal">1 Withdrawal</div> 
+                <div class="Transactions-date">01/12/2020</div>
+                <div class="Transactions-value">-378€</div>
+              </div>
+          </div>
+          
+          <!-- Summary-->
+          <div class="Summary">
+              <p class="Summary-label"> In</p>
+              <p class="Summary-value Summary-value-in">0000€</p>
+              <p class="Summary-label">Out</p>
+              <p class="Summary-value Summary-value-out">0000€</p>
+              <p class="Summary-label">Interest</p>
+              <p class="Summary-value Summary-value-interest">0000€</p>
+              <button class="btn-sort">&downarrow; SORT</button>
+          </div>
+           <!-- OPERATION: TRANSFERS -->
+           
+           <div class="Operation Operation-transfer">
+               <h2>Transfer Money</h2>
+               <form class="Form Form-transfer">
+                   <input type="text" class="Form-input Form-input-to"/>
+                   <input type="number" class="Form-input Form-input-amount"/>
+                   <button class="Form-btn Form-btn-transfer">&rarr;</button>
+                   <label class="Form-label">Transfer to</label>
+                   <label class="Form-label">Amount</label>
+               </form>
+               
+           </div>
+           <!-- OPERATION: Loan -->
+            <div class="Operation Operation-loan">
+               <h2>Request Loan</h2>
+               <form class="Form Form-loan">
+                   <input type="number" class="Form-input Form-input-loan"/>
+                   <button class="Form-btn Form-btn-loan">&rarr;</button>
+                   <label class="Form-label Form-label-loan">Transfer to</label>
+               </form>
+           </div>
+           <!-- OPERATION: Close -->
+           
+           <div class="Operation Operation-close">
+               <h2>Close account</h2>
+               <form class="Form Form-close">
+                   <input type="text" class="Form-input Form-input-user"/>
+                   <input type="password" class="Form-input Form-input-pin"/>
+                   <button class="Form-btn Form-btn-close">&rarr;</button>
+                   <label class="Form-label">Confirm user</label>
+                    <label class="Form-label">Confirm PIN</label>
+               </form>
+           </div>
+          
+          <!-- LOGOUT-->
+          
+      </main>
+      
+      <script src="script.js"></script>
+  </body>
 </html>
