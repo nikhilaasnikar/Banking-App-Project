@@ -1,4 +1,7 @@
 'use strict';
+prompt(`Please Your the following Username and password to login
+USER--> na
+PIN--> 1111`);
 // Data
 const account1 = {
   owner: 'Nikhil Aasnikar',
@@ -37,7 +40,7 @@ const labelBalance = document.querySelector('.Balance-value');
 const labelSumIn = document.querySelector('.Summary-value-in');
 const labelSumOut = document.querySelector('.Summary-value-out');
 const labelSumInterest = document.querySelector('.Summary-value-interest');
-const labelTimer = document.querySelector('.timer'); //not found
+// const labelTimer = document.querySelector('.timer');
 
 const containerApp = document.querySelector('.App');
 const containerTransactions = document.querySelector('.Transactions'); //1
