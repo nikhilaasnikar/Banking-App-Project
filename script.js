@@ -1,5 +1,5 @@
 'use strict';
-prompt(`Please Your the following Username and password to login
+alert(`Please Use the following Username and password for login
 USER--> na
 PIN--> 1111`);
 // Data
