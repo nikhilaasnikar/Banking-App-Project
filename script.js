@@ -1,5 +1,5 @@
 'use strict';
-alert(`Please Use the following Username and password for login
+alert(`Please use any of the following Username and password for login:
 USER--> na
 PIN--> 1111,
 USER--> va  
