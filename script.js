@@ -1,7 +1,14 @@
 'use strict';
 alert(`Please Use the following Username and password for login
 USER--> na
-PIN--> 1111`);
+PIN--> 1111,
+USER--> va  
+PIN--> 2222,
+USER--> nk
+PIN--> 3333,
+USER--> ss
+PIN--> 4444
+`);
 // Data
 const account1 = {
   owner: 'Nikhil Aasnikar',
